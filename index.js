@@ -1,13 +1,17 @@
 const Discord = require("discord.js");
 const Enmap = require("enmap");
 const fs = require("fs");
+// requiring node modules
 
+//creating new discord client
 const bot = new Discord.Client();
+//getting config file 
 const config = require("./config.json");
 
 // We also need to make sure we're attaching the config to the CLIENT so it's accessible everywhere!
 bot.config = config;
 
+//initializing command handler
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
   files.forEach(file => {
@@ -30,4 +34,5 @@ fs.readdir("./commands/", (err, files) => {
   });
 });
 
+//launching bot with token from config file
 bot.login(config.token);
