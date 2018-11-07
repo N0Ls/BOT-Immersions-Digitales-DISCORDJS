@@ -2,32 +2,21 @@
   "prefix": "!",
   "token": "",
   "games": [
+    /*Add the games you want the bot to be allowed to play*/
     "The Forest",
     "Counter Strike : Global Offensive",
     "Rocket League",
-    "FIFA 20",
-    "Jurassic World Evolution",
-    "Les SIMS 3",
-    "Life is Strange",
-    "Life is Strange Before The Storm",
-    "Tom Clancy's Rainbow Six Siege",
-    "Minecraft",
-    "SCUM",
-    "Portal 2",
-    "Prison Architect",
-    "PLAYERUNKNOWN'S BATTLEGROUNDS",
-    "South Park The Fractured But Whole",
-    "Subnautica",
-    "Team Fortress 2"
+    "..."
+
   ],
   "watch":[
-    "DATAGUEULE",
-    "ArteRadio",
+    /*Add the TV show, films or anything you want the bot to be able to watch*/
+    "Breaking Bad",
     "Mr Robot",
-    "Il était une fois la vie",
-    "Notre Projet"
+    "House MD"
   ],
   "music":[
+    /*Add the music you want the bot to be able to listen to*/
     "Justice",
     "Daft Punk",
     "Madeon",
