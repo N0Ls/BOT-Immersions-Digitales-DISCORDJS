@@ -1,7 +1,9 @@
 exports.run = (bot, message, args) => {
 
+/*Command that use the news API to get the latest news over a subject*/
+/*For more information refer to newsapi*/
 const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('9371b4866db041f69d7ec99ec2252e51');
+const newsapi = new NewsAPI('YOUR API KEY');
 
 x = new Date();
 x.setFullYear=(x.getFullYear());
@@ -14,6 +16,7 @@ y.setMonth=(x.getMonth());
 y.setDay=(x.getDay())-1;
 
 newsapi.v2.everything({
+/*query subject here*/
   q: 'startup OR start-up',
   from: y,
   to: x,
@@ -42,16 +45,3 @@ newsapi.v2.everything({
   });
 
 }
-
-
-// newsapi.v2.everything({
-//   q: 'startup OR start-up',
-//   from: '2018-09-05',
-//   to: '2018-09-06',
-//   language: 'fr',
-//   sortBy: 'publishedAt',
-//   page: 2
-// }).then(response => {
-//   console.log(response.articles[0]);
-
-//   });

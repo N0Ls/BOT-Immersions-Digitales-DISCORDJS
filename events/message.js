@@ -1,16 +1,17 @@
 module.exports = (bot, message) => {
 
-  //Ban swear words (delete messages and send warning to user)
-  const gm = require("../gm.json");
+  //Ban swear words (delete message and send warning to user)
   const msglect = message.content.toLowerCase();
   
+  //Add you swear word as RegEx 
   var swearlist=[
+  /\bswear\b/,
   /\bcon\b/,
-  /\bpd\b/,
   /\bta gueule\b/,
   /\btg\b/
   ];
 
+  //Delete message and send warning to user
   for (var i = swearlist.length - 1; i >= 0; i--) {
     if(swearlist[i].test(msglect)){
       message.delete();

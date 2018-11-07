@@ -1,5 +1,5 @@
 module.exports = (bot, oldMember, newMember) => {
-	
+	//Play a song each time a specific user joins a channel on the server
 	let newUserChannel = newMember.voiceChannel
   let oldUserChannel = oldMember.voiceChannel
 
@@ -7,12 +7,12 @@ module.exports = (bot, oldMember, newMember) => {
   if(oldUserChannel === undefined && newUserChannel !== undefined) {
 
      // User Joins a voice channel
-     if (newMember.id=="251069580607356928" || newMember.id=="142317014730539008" || newMember.id=="276416841788686336" || newMember.id=="133966052886315008" || newMember.id=="93444414529081344" ) {
+     if (newMember.id=="USER1 ID" || newMember.id=="USER2 ID") {
       const broadcast = bot.createVoiceBroadcast();
       newMember.voiceChannel.join()
       .then(connection => {
-        console.log("Envoie la musique mamène");
-        broadcast.playFile('./ouais.mp3', {volume: 0.25});
+        console.log("song playes");
+        broadcast.playFile('PATH TO SONG', {volume: 0.25});
         const dispatcher = connection.playBroadcast(broadcast);
         broadcast.on("end", end=>{
           broadcast.destroy();

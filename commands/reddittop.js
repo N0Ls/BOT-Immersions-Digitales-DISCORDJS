@@ -1,4 +1,5 @@
 exports.run = (bot, message, args) => {
+  /*Get posts from reddit top*/
   const request = require('request');
     request('https://www.reddit.com/r/popular/hot.json', { json: true }, (err, res, body) => {
       if (err) { return console.log(err); }

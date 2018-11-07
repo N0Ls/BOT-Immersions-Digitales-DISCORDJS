@@ -1,5 +1,5 @@
 exports.run = (bot, message, args) => {
- 	/*message.delete();*/
+  /*Send a DM to a user with the message you want as the bot*/
   	if(!message.member.roles.some(r=>["Gestion de projet (Administrateur)", "Modérateur"].includes(r.name)) )
       return message.reply("Sorry, you don't have permissions to use this!");
 

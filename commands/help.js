@@ -1,5 +1,6 @@
 exports.run = (bot, message, args) => {
 	const Discord = require("discord.js");
+	/*Help the members know the bot commands*/
 	const embed = new Discord.RichEmbed()
 		.setTitle("Les commandes auxquelles je réponds :")
 	    .setColor("#EE2E2C")
