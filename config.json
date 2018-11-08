@@ -2,7 +2,7 @@
   "prefix": "!",
   "token": "",
   "games": [
-    /*Add the games you want the bot to be allowed to play*/
+    //Add the games you want the bot to be allowed to play
     "The Forest",
     "Counter Strike : Global Offensive",
     "Rocket League",
@@ -10,13 +10,13 @@
 
   ],
   "watch":[
-    /*Add the TV show, films or anything you want the bot to be able to watch*/
+    //Add the TV show, films or anything you want the bot to be able to watch
     "Breaking Bad",
     "Mr Robot",
     "House MD"
   ],
   "music":[
-    /*Add the music you want the bot to be able to listen to*/
+    //Add the music you want the bot to be able to listen to
     "Justice",
     "Daft Punk",
     "Madeon",
