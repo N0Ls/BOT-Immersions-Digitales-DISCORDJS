@@ -1,0 +1,22 @@
+{
+  "name": "bot_id_2019",
+  "version": "1.0.0",
+  "description": "Bot to help with the organisation of the event of the Immersions Digitales on the discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "discord.js": "^11.3.2",
+    "enmap": "^4.0.6",
+    "newsapi": "^2.3.0",
+    "node-gyp": "^3.8.0",
+    "npm": "^6.4.1",
+    "opusscript": "0.0.6",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {}
+}

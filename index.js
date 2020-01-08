@@ -5,6 +5,8 @@ const fs = require("fs");
 
 //creating new discord client
 const bot = new Discord.Client();
+const tabAteliers = ['Mapping', 'VR','Fond Vert', 'Kebab'] ;
+const statusAteliers = [0,0,0,0];
 //getting config file 
 const config = require("./config.json");
 
